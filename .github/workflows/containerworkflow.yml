@@ -11,8 +11,6 @@ jobs:
     build-deploy-image:
         
         runs-on: ubuntu-latest
-        
-        environment: PROD
 
         steps:
         # checkout the repo
@@ -32,6 +30,8 @@ jobs:
     deploy-to-aks:
       
       runs-on: ubuntu-latest
+        
+      environment: PROD
       
       if: github.ref == 'refs/heads/master'
 
