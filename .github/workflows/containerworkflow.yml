@@ -12,6 +12,8 @@ jobs:
         
         runs-on: ubuntu-latest
         
+        environment: PROD
+
         steps:
         # checkout the repo
         - name: 'Checkout GitHub Action'
