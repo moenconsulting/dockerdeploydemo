@@ -38,7 +38,7 @@ jobs:
       needs: build-deploy-image
           
       env:
-        NAMESPACE: dummy
+        NAMESPACE: default
       
       steps:
       
